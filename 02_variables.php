@@ -43,6 +43,7 @@ $has_kids = false;
 
 // Constants - Can NEVER CHANGE VALUE
 // Denoted with all caps; use define keyword
+// define("CONST_NAME", value)
 define("BEST_DOG", "Bill");
 echo BEST_DOG;
 ?>

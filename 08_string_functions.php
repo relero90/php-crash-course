@@ -33,3 +33,14 @@
     // Check if a string starts or ends with a given substring
     var_dump(str_starts_with($string, "I'm"));
     var_dump(str_ends_with($string, "I'm"));
+
+
+    $string2 = '<script>alert("Hello!")</script>';
+    //echo $string2; //will run the script tag
+    echo htmlspecialchars($string); //will turn the script tag into a string and render it as such
+
+    // Formatted strings - good for forms or when users provide data
+    // Specifiers are denoted with %char and formatted accordingly
+    /* %s = string, %d = integer, %f = float */
+    printf('%s likes to %s', 'Becca', 'code in PHP');
+    printf('1+1=%d', 1+1);
